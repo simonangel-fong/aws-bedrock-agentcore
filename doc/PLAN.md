@@ -1,0 +1,35 @@
+- Harness
+  - Model
+  - Memory
+  - Tools
+  - Skills
+  - Lifecycle hooks
+
+- Observability
+- Connections
+  - Browser
+  - Code interpreter
+  - KB
+- Resources
+  - memory
+  - eval
+  - gateway
+  - policy
+
+---
+
+- 1. Chatbot
+  - model + memory
+- 2. complied Chatbot
+  - agent + guardrail + evaluation
+  - answer IT topic only
+- 3. Ubuntu command assistant
+  - agent + kb + gr + eval
+  - query ubuntu runbook; answer ubuntu commands topic only
+- 4. 
+  - capacity provider
+  - agent + kb + tool list + gr + eval
+  - lambda + dynamodb
+- phase 5: agent + kb + tool list + gateway + policy + gr + eval
+- phase 5: agent + kb + tool list + gateway + policy + gr + eval
+-
