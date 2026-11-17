@@ -58,9 +58,16 @@ MyProject/
 
 ## Test locally
 
+- CLI automatically:
+  - Creates a Python virtual environment (.venv) if needed
+  - Installs dependencies via uv sync
+  - Starts a local server on port 8080 with hot reloads
+
 ```sh
 cd MyProject
 agentcore dev --mode browser
+
+agentcore invoke --runtime agent --local --payload '{"prompt":"Plan two days in Lisbon in one paragraph."}'
 ```
 
 > Debug: Authentication failed: Please make sure your API Key is valid.
@@ -95,8 +102,8 @@ agentcore build
 ```sh
 agentcore deploy
 
-# Check status:
-agentcore status
+# verify
+agentcore status --json
 ```
 
 - Confirm in console
@@ -200,4 +207,7 @@ agentcore traces runtime get 6afb99173153031c52dfcc0543282f36
 # removes every resource from the project specification.
 agentcore remove all --yes
 agentcore deploy --yes
+# ✓ synthesizing CloudFormation templates
+# ✓ removing stack AgentCore-MyProject-default
+# removed project 'MyProject' from target 'default'
 ```
