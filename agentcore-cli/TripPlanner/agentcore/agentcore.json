@@ -2,38 +2,14 @@
   "name": "TripPlanner",
   "version": 2,
   "managedBy": "CDK",
-  "runtimes": [
-    {
-      "name": "agent",
-      "build": "CodeZip",
-      "modelProvider": "Bedrock",
-      "entrypoint": "main.py",
-      "codeLocation": "app/agent",
-      "runtimeVersion": "PYTHON_3_14",
-      "protocol": "HTTP"
-    }
-  ],
-  "memories": [
-    {
-      "name": "agentMemory",
-      "eventExpiryDuration": 30,
-      "strategies": [
-        {
-          "type": "SEMANTIC",
-          "namespaceTemplates": [
-            "/users/{actorId}/facts"
-          ]
-        },
-        {
-          "type": "EPISODIC",
-          "namespaceTemplates": [
-            "/episodes/{actorId}/{sessionId}"
-          ],
-          "reflectionNamespaceTemplates": [
-            "/episodes/{actorId}"
-          ]
-        }
-      ]
-    }
-  ]
+  "runtimes": [],
+  "memories": [],
+  "knowledgeBases": [],
+  "credentials": [],
+  "evaluators": [],
+  "onlineEvalConfigs": [],
+  "agentCoreGateways": [],
+  "policyEngines": [],
+  "configBundles": [],
+  "harnesses": []
 }
